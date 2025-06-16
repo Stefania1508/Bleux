@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: #1e172f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem 2rem;
+  align-items: center;
+}
+
+.menu nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu nav a {
+  color: #7c7785;
+  text-decoration: none;
+}
+
+.menu nav .listo {
+  color: white;
+}
+
+.boton.d {
+  background: -webkit-linear-gradient(left, #8640d5, #3468d6, #097cd5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.inicio {
+  display: flex;
+  background-color: #2e2550;
+  color: white;
+  max-height: 48rem;
+  overflow: hidden;
+}
+
+.inicio-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
+  margin-left: 250px;
+}
+
+.inicio-text h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.inicio-text p {
+  font-size: 1.2rem;
+}
+
+.imagen {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8rem 0 4rem 150px;
+  background: url(../assets/images/hojasFondo.jpg) no-repeat center center/cover;
+}
+
+.imagen img {
+  max-height: 450px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.inicio .bot {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+  border: 2px #7c7785 solid;
+  border-radius: 5px;
+}
+
+.inicio .bot .btn {
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  background: white;
+  font-size: 1rem;
+}
+
+.gtext {
+  background: linear-gradient(to right, #ff3ca4, #e60073);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bot .btn.s2 {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.care {
+  background-color: #f4f5fb;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.care h2 {
+  color: #ec1470;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.care-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.care-s img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.care-text {
+  max-width: 500px;
+}
+
+.care-text h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #c974a1, #e0569e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.care-text h4 {
+  color: #ec1470;
+}
+
+.care-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.care-text ul {
+  list-style: none;
+  padding: 0;
+  color: #333;
+}
+
+.care-text ul li {
+  padding-left: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.care-text ul li::before {
+  content: "✔";
+  color: #ec1470;
+  font-weight: bold;
+  border: 2px solid #e60073;
+  border-radius: 50%;
+  background-color: white;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+.care-text h4:first-child::before {
+  content: "—";
+  font-size: 1.5rem;
+  color: #ec1470;
+  margin-right: 10px;
+}
+
+.plans {
+  padding: 4rem 2rem;
+  background-color: #1f103f;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans h2 {
+  font-size: 2.5rem; /* o prueba con 3rem o 40px según lo grande que lo quieras */
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.pricing-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cards h3 {
+  margin-bottom: 1rem;
+}
+
+.cards .precio {
+  font-size: 30px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.precio span {
+  font-size: 0.6em;
+  vertical-align: super;
+  color: #666;
+}
+
+.contenidoPrecio {
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.desc {
+  margin-top: 20px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contenidoBoton {
+  margin-top: 30px;
+}
+
+.cards ul {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards ul li {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  display: flex;
+    align-items: center;      
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start; 
+}
+
+.cards ul li.icono-ch::before {
+  content: "✔";
+  color: #f41486;
+  font-weight: bold;
+  width: 25%;             
+  display: inline-block;
+  text-align: center;      
+  margin-right: 0.5rem;    
+  flex-shrink: 0;          
+}
+
+.cards ul li ._12 {
+  width: 70%;
+  display: flex;
+  justify-content: center;  
+}
+
+
+.cards ul li.icono-st::before {
+  content: "★";
+  color: #f41486;
+}
+
+.cards ul li.icono-x-a::before {
+  content: "✘";
+  color: #5e5e5e;
+}
+
+.cards ul li.icon-ch::before {
+  content: "✔";
+  color: #2f2946;
+  font-weight: bold;
+}
+
+.cards ul li.icon-st::before {
+  content: "★";
+  color: #2f2946;
+}
+
+.cards ul li.icon-x::before {
+  content: "✘";
+  color: #5e5e5e;
+}
+
+.contenidoBoton {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.btn.subscribe {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+#btnFree {
+  background: linear-gradient(90deg, #ec60a8, #f31f8b);
+}
+
+.btn.subscribe.c {
+  background-color: #2d1b55;
+}
+
+footer {
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer .redes a {
+  text-decoration: none;
+  color: #333;
+}
