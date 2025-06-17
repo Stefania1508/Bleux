@@ -272,7 +272,6 @@ body {
 .contenidoBoton {
   margin-top: 30px;
 }
-
 .cards ul {
   margin-top: 20px;
   width: 100%;
@@ -284,54 +283,81 @@ body {
   margin: 0.2rem 0;
   font-size: 1rem;
   display: flex;
-    align-items: center;      
   align-items: center;
   width: 100%;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .cards ul li.icono-ch::before {
   content: "✔";
   color: #f41486;
   font-weight: bold;
-  width: 25%;             
-  display: inline-block;
-  text-align: center;      
-  margin-right: 0.5rem;    
-  flex-shrink: 0;          
-}
-
-.cards ul li ._12 {
-  width: 70%;
+  width: 25%;
   display: flex;
-  justify-content: center;  
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
+.cards ul li span {
+width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .cards ul li.icono-st::before {
   content: "★";
   color: #f41486;
+  font-weight: bold;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards ul li.icono-x-a::before {
   content: "✘";
   color: #5e5e5e;
+  font-weight: bold;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards ul li.icon-ch::before {
   content: "✔";
   color: #2f2946;
   font-weight: bold;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards ul li.icon-st::before {
   content: "★";
   color: #2f2946;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards ul li.icon-x::before {
   content: "✘";
   color: #5e5e5e;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .contenidoBoton {
