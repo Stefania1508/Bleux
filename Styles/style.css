@@ -224,7 +224,7 @@ body {
 }
 
 .plans h2 {
-  font-size: 2.5rem; /* o prueba con 3rem o 40px según lo grande que lo quieras */
+  font-size: 2.5rem; 
   font-weight: bold;
   margin-top: -20px;
   margin-bottom: 30px;
